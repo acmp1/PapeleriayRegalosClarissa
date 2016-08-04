@@ -43,14 +43,18 @@ $(document).ready(function(){
     });
     $(window).resize(function(){
 
-       if ($(window).width() <= 780) {  
+       if ($(window).width() <= 942) {  
+
+              $("#imagen").height(74.7);
+              $("#imagen").width(248.6);
+       }
+       else if ($(window).width() <= 580) {  
 
               $("#imagen").height(136);
               $("#imagen").width(242);
               $("#logo").height(53.4);
               $("#logo").width(177.6);
-       }
-       else{
+       } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
            $("#logo").height(106.8);
