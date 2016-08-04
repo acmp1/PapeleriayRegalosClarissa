@@ -60,7 +60,10 @@ $(document).ready(function(){
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
               {
-              	$("#accordion").accordion( "disable" );
+              	//$("#accordion").accordion( "disable" );
+              	// Getter
+		var active = $( "#accordion" ).accordion( "option", "active" );
+		$( "#accordion" ).accordion( "option", "active", 3 );
               }
        } else if ($(window).width() <= 942) {  
 
@@ -70,8 +73,9 @@ $(document).ready(function(){
               $("#gmap").width(451.5);
               if($("#bContacto").hasClass("active"))
               {
-              	$("#accordion").accordion( "disable" );
-
+              	//$("#accordion").accordion( "disable" );
+              	var active = $( "#accordion" ).accordion( "option", "active" );
+		$( "#accordion" ).accordion( "option", "active", 3 );
               }
        } else {
            $("#imagen").height(362);
