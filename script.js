@@ -60,7 +60,7 @@ $(document).ready(function(){
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
               {
-              	$("#accordion").accordion("disable");
+              	$("#accordion").accordion("destroy");
               }
        } else if ($(window).width() <= 942) {  
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
               $("#gmap").width(451.5);
               if($("#bContacto").hasClass("active"))
               {
-              	$("#accordion").accordion("disable");
+              	$("#accordion").accordion("destroy");
               }
        } else {
            $("#imagen").height(362);
