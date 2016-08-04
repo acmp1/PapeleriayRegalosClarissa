@@ -70,12 +70,14 @@ $(document).ready(function(){
               $("#gmap").width(241.875);
               $("#logo").height(53.4);
               $("#logo").width(177.6);
+              $( "#accordion" ).accordion( "option", "heightStyle", "fill" );
        } else if ($(window).width() <= 942) {  
 
               $("#imagen").height(253.4);
               $("#imagen").width(451.5);
               $("#gmap").height(253.4);
               $("#gmap").width(451.5);
+              $( "#accordion" ).accordion( "option", "heightStyle", "fill" );
        } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
