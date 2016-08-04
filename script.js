@@ -48,15 +48,21 @@ $(document).ready(function(){
 
               $("#imagen").height(135.75);
               $("#imagen").width(241.875);
+              $("#gmap").height(135.75);
+              $("#gmap").width(241.875);
               $("#logo").height(53.4);
               $("#logo").width(177.6);
        } else if ($(window).width() <= 942) {  
 
               $("#imagen").height(253.4);
               $("#imagen").width(451.5);
+              $("#gmap").height(253.4);
+              $("#gmap").width(451.5);
        } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
+           $("#gmap").height(362);
+           $("#gmap").width(645);
            $("#logo").height(106.8);
            $("#logo").width(355.2);
        }     
