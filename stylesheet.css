@@ -1,0 +1,183 @@
+.logo {
+	color:#ffe6ec;
+}
+#imagen{
+    margin-top:2.75%;
+}
+.estilo{
+    width:100%;
+    height:35px;
+    clear:both;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    background: #ff8080; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ff8080, #ff1a1a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ff8080, #ff1a1a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ff8080, #ff1a1a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff8080, #ff1a1a); /* Standard syntax */
+    /*margin:2% 0;
+    margin-top:2%;
+    margin-bottom:2%;*/
+}
+#accordion{
+    margin-top:2.75%;
+}
+#accordion h3{
+   color:#fff;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   background: #ff8080; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(#ff8080, #ff1a1a); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(#ff8080, #ff1a1a); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(#ff8080, #ff1a1a); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(#ff8080, #ff1a1a); /* Standard syntax */
+}
+.estilo h3{
+    margin-left:4%;
+    position:center;
+    width:100%;
+    color:#fff;
+    text-align:left;
+    vertical-align: middle;
+    line-height: 35px;    
+}
+.active{
+	color:#fff;
+	background: #cc0033; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #ff5c5c, #cc0033); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #ff5c5c, #cc0033); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff5c5c, #cc0033); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #ff5c5c, #cc0033); /* Standard syntax */
+    text-shadow:none;
+}
+body {
+	font-size:87.5%;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.429;
+    margin:0;
+    padding:0;
+    /*text-align:left;*/
+}
+a{
+    text-decoration: none;
+}
+.body {
+    margin:0 auto;
+    width:70%;
+    clear: both;
+}
+.mainheader img {
+    width:30%;
+    height:auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2%;
+    margin-bottom:2%;
+} 
+.mainheader nav{
+    position:static;
+    clear:both;
+    width:100%;
+    background: #ff5c5c; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #ff5c5c, #66001a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #ff5c5c, #66001a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff5c5c, #66001a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #ff5c5c, #66001a); /* Standard syntax */
+    height:40px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.mainheader nav ul{
+    list-style:none;
+    margin:0 auto;
+}
+.mainheader nav ul li{
+    float: left;
+    display:inline;
+}
+.mainheader nav a:link, .mainheader nav a:visited{
+    color:#fff;
+    display:inline-block;
+    padding:10px 25px;
+    height:20px;
+    text-decoration:none;
+}
+.mainheader nav a:hover,.mainheader nav a:active,.mainheader nav .active a:link,.mainheader nav .active a:visited{
+    background: #cc0033; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #ff5c5c, #cc0033); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #ff5c5c, #cc0033); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff5c5c, #cc0033); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #ff5c5c, #cc0033); /* Standard syntax */
+    text-shadow:none;
+    color:#fff;
+}
+.mainheader nav ul li a{
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.mainContent{
+    line-height:25px;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    overflow:hidden;
+}
+.mainFooter{
+    width:100%;
+    height:40px;
+    float:right;
+    clear:both;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    background: #ff5c5c; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #ff5c5c, #66001a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #ff5c5c, #66001a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #ff5c5c, #66001a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #ff5c5c, #66001a); /* Standard syntax */
+    margin:2% 0;
+    /*margin-top:2%;
+    margin-bottom:2%;*/
+}
+.mainFooter p{
+    width:92%;
+    margin:10px auto;
+    color:#fff;
+    text-align:center;
+}
+@media only screen and (min-width : 150px) and (max-width : 780px) {
+    
+    .body {
+        width:90%;
+        font-size:95%;
+    }
+    .mainheader img {
+        width:100%;
+    }
+    .mainheader nav{
+        margin-bottom:1%;
+        height:80px;
+        width:100%;
+    }
+    #accordion{
+    margin-top:1%;
+    }
+    .mainheader nav ul{
+        padding-left:0;
+    }
+    .mainheader nav ul li{
+        width:100%;
+        text-align:center;
+    }
+    .mainheader nav a:link, .mainheader nav a:visited{
+        padding:10px 25px;
+        height:20px;
+        display:block;
+    }
+    .mainFooter{
+        height:60px;
+    }
+}
