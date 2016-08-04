@@ -43,17 +43,16 @@ $(document).ready(function(){
     });
     $(window).resize(function(){
 
-       if ($(window).width() <= 942) {  
+       if ($(window).width() <= 580) {  
 
-              $("#imagen").height(74.7);
-              $("#imagen").width(248.6);
-       }
-       else if ($(window).width() <= 580) {  
-
-              $("#imagen").height(136);
-              $("#imagen").width(242);
+              $("#imagen").height(135.75);
+              $("#imagen").width(241.875);
               $("#logo").height(53.4);
               $("#logo").width(177.6);
+       } else if ($(window).width() <= 942) {  
+
+              $("#imagen").height(253.4);
+              $("#imagen").width(451.5);
        } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
