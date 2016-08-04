@@ -12,9 +12,9 @@ function cambiaImg(){
 	    }
     setTimeout("cambiaImg()", 3000);
 }
-var map;
+/*var map;*/
 /*var Latlng = new google.maps.LatLng(21.876599,-102.308505);*/
-function initMap() {
+/*function initMap() {
     map= new google.maps.Map(document.getElementById('gmap'), {
           center: {lat: 21.876599, lng: -102.308505},
           zoom: 12;
@@ -23,7 +23,21 @@ function initMap() {
 var marker = new google.maps.Marker({
     position: Latlng;
     title:"Papelería y Regalos Clarissa";
-});
+});*/
+function initMap() {
+  var myLatLng = {lat: 21.876599, lng: -102.308505};
+
+  var map = new google.maps.Map(document.getElementById('gmap'), {
+    zoom: 8,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Papelería y Regalos Clarissa'
+  });
+}
 var imgArr = new Array();
 imgArr[0]=new Image();
 imgArr[0].src="Images/Slide/Image1.png";
