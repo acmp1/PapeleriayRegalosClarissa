@@ -61,6 +61,7 @@ $(document).ready(function(){
               if($("#bContacto").hasClass("active"))
               {
               	$("#accordion").hide();
+              	$("#imagen").hide();
               }
        } else if ($(window).width() <= 942) {  
 
@@ -71,6 +72,7 @@ $(document).ready(function(){
               if($("#bContacto").hasClass("active"))
               {
               	$("#accordion").hide();
+              	$("#imagen").hide();
               }
        } else {
            $("#imagen").height(362);
