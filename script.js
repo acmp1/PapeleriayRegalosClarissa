@@ -13,10 +13,10 @@ function cambiaImg(){
     setTimeout("cambiaImg()", 3000);
 }
 var map;
-var Latlng = new google.maps.LatLng(21.876599,-102.308505);
+/*var Latlng = new google.maps.LatLng(21.876599,-102.308505);*/
 function initMap() {
     map= new google.maps.Map(document.getElementById('gmap'), {
-          center: Latlng;
+          center: {lat: 21.876599, lng: -102.308505},
           zoom: 12;
         });
 }
@@ -37,7 +37,6 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    marker.setMap(map);
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
