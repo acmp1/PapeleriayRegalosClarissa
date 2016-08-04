@@ -12,13 +12,13 @@ function cambiaImg(){
 	    }
     setTimeout("cambiaImg()", 3000);
 }
-/*var map;
+var map;
 function initMap() {
-    map= new google.maps.Map(document.getElementById('map'), {
+    map= new google.maps.Map(document.getElementById('gmap'), {
           center: {lat: 21.876602, lng: -102.308489},
           zoom: 8
         });
-}*/
+}
 var imgArr = new Array();
 imgArr[0]=new Image();
 imgArr[0].src="Images/Slide/Image1.png";
@@ -32,7 +32,6 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    /*google.maps.event.addDomListener(window, 'load', initialize);*/
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
