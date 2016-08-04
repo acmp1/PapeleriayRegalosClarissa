@@ -70,7 +70,7 @@ $(document).ready(function(){
               $("#gmap").width(241.875);
               $("#logo").height(53.4);
               $("#logo").width(177.6);
-              document.getElementById("accordion").style.marginTop = 20px;
+              document.getElementById("accordion").style.marginTop = 20 px;
        } else if ($(window).width() <= 942) {  
 
               $("#imagen").height(253.4);
