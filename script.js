@@ -38,10 +38,6 @@ $(document).ready(function(){
     cambiaImg();
     $( "#accordion" ).accordion({
       heightStyle: "content"
-      if($("#bContacto").hasClass("active"))
-              {
-		$( "#accordion" ).accordion( "option", "active", 3 );
-              }
     });
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
@@ -63,10 +59,8 @@ $(document).ready(function(){
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
               {
-              	/*$("#accordion").accordion( "disable" );
-              	// Getter
 		var active = $( "#accordion" ).accordion( "option", "active" );
-		$( "#accordion" ).accordion( "option", "active", 3 );*/
+		$( "#accordion" ).accordion( "option", "active", 3 );
               }
        } else if ($(window).width() <= 942) {  
 
@@ -74,12 +68,11 @@ $(document).ready(function(){
               $("#imagen").width(451.5);
               $("#gmap").height(253.4);
               $("#gmap").width(451.5);
-              /*if($("#bContacto").hasClass("active"))
+              if($("#bContacto").hasClass("active"))
               {
-              	//$("#accordion").accordion( "disable" );
               	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
-              }*/
+              }
        } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
