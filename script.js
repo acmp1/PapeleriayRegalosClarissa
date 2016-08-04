@@ -49,7 +49,11 @@ $(document).ready(function(){
         $('#bContacto').removeClass('active');
     });
     $(window).resize(function(){
-
+	if($("#bContacto").hasClass("active"))
+              {
+              	var active = $( "#accordion" ).accordion( "option", "active" );
+		$( "#accordion" ).accordion( "option", "active", 3 );
+              }
        if ($(window).width() <= 580) {  
 
               $("#imagen").height(135.75);
@@ -60,10 +64,10 @@ $(document).ready(function(){
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
               {
-              	//$("#accordion").accordion( "disable" );
+              	/*$("#accordion").accordion( "disable" );
               	// Getter
 		var active = $( "#accordion" ).accordion( "option", "active" );
-		$( "#accordion" ).accordion( "option", "active", 3 );
+		$( "#accordion" ).accordion( "option", "active", 3 );*/
               }
        } else if ($(window).width() <= 942) {  
 
@@ -71,12 +75,12 @@ $(document).ready(function(){
               $("#imagen").width(451.5);
               $("#gmap").height(253.4);
               $("#gmap").width(451.5);
-              if($("#bContacto").hasClass("active"))
+              /*if($("#bContacto").hasClass("active"))
               {
               	//$("#accordion").accordion( "disable" );
               	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
-              }
+              }*/
        } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
