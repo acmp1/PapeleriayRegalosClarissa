@@ -38,6 +38,10 @@ $(document).ready(function(){
     cambiaImg();
     $( "#accordion" ).accordion({
       heightStyle: "content"
+      if($("#bContacto").hasClass("active"))
+              {
+		$( "#accordion" ).accordion( "option", "active", 3 );
+              }
     });
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
@@ -49,11 +53,6 @@ $(document).ready(function(){
         $('#bContacto').removeClass('active');
     });
     $(window).resize(function(){
-	if($("#bContacto").hasClass("active"))
-              {
-              	var active = $( "#accordion" ).accordion( "option", "active" );
-		$( "#accordion" ).accordion( "option", "active", 3 );
-              }
        if ($(window).width() <= 580) {  
 
               $("#imagen").height(135.75);
