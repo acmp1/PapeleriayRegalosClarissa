@@ -27,7 +27,6 @@
 }
 #accordion{
     margin-top:2.75%;
-    overflow:hidden;
 }
 #accordion h3{
    color:#fff;
@@ -169,8 +168,7 @@ a{
         width:100%;
     }
     #accordion{
-    	margin-top:0;
-    	clear:both;
+    	margin-top:1%;
     }
     .mainheader nav ul{
         padding-left:0;
