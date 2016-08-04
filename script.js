@@ -80,11 +80,6 @@ $(document).ready(function(){
            $("#gmap").width(645);
            $("#logo").height(106.8);
            $("#logo").width(355.2);
-           if($("#bContacto").hasClass("active"))
-              {
-              	var active = $( "#accordion" ).accordion( "option", "active" );
-		$( "#accordion" ).accordion( "option", "active", 3 );
-              }
        }     
 
 });
