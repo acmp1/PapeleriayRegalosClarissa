@@ -15,8 +15,8 @@ function cambiaImg(){
 var map;
 function initMap() {
     map= new google.maps.Map(document.getElementById('gmap'), {
-          center: {lat: 21.876602, lng: -102.308489},
-          zoom: 8
+          center: {lat: 21.876599, lng: -102.308505},
+          zoom: 12
         });
 }
 var imgArr = new Array();
