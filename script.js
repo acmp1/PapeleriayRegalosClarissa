@@ -48,6 +48,8 @@ $(document).ready(function(){
         $('#bInicio').addClass('active');
         $('#bContacto').removeClass('active');
     });
+    var $Menor=$('<h3 id="Contacto" class="algo">Contacto</h3><div align="center"><p align="center">Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p><div id="gmap"></div></div>');
+    var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="center"><div id="gmap"></div></div><p align="center"> Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p></div>');
     $(window).resize(function(){
        if ($(window).width() <= 580) {  
 
@@ -59,6 +61,11 @@ $(document).ready(function(){
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
               {
+              	if($("#Contacto").hasClass("estilo"))
+              	{
+              		$Mayor.remove();
+              	}
+		$('#ultimoDiv').append($Menor);
 		var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
@@ -70,6 +77,11 @@ $(document).ready(function(){
               $("#gmap").width(451.5);
               if($("#bContacto").hasClass("active"))
               {
+              	if($("#Contacto").hasClass("estilo"))
+              	{
+              		$Mayor.remove();
+              	}
+              	$('#ultimoDiv').append($Menor);
               	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
@@ -80,6 +92,11 @@ $(document).ready(function(){
            $("#gmap").width(645);
            $("#logo").height(106.8);
            $("#logo").width(355.2);
+           if($("#Contacto").hasClass("algo"))
+              	{
+              		$Menor.remove();
+              	}
+           $('#accordion').append($Mayor);
        }     
 
 });
