@@ -52,10 +52,14 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    $('#gmap').on('shown', function () {
-  	google.maps.event.trigger(map, 'resize');
-  	map.setCenter(new google.maps.LatLng(21.876599, -102.308505));
+    if("#bContacto").hasClass("active")
+    {
+    	$('#gmap').on('shown', function () {
+  		google.maps.event.trigger(map, 'resize');
+  		map.setCenter(new google.maps.LatLng(21.876599, -102.308505));
 	})
+    }
+    
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
