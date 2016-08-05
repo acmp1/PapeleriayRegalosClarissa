@@ -69,9 +69,9 @@ $(document).ready(function(){
               $("#gmap").width(241.875);*/
               $("#logo").height(53.4);
               $("#logo").width(177.6);
-              /*if($("#bContacto").hasClass("active"))
+              if($("#bContacto").hasClass("active"))
               {
-              	($("#Contacto").hasClass("estilo"))
+              	/*if($("#Contacto").hasClass("estilo"))
               	{
               		$Mayor.empty();
               	}
@@ -96,22 +96,22 @@ $(document).ready(function(){
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
        } else {
-           $("#imagen").height(362);
-           $("#imagen").width(645);
-           /*$("#gmap").height(362);
-           $("#gmap").width(645);
-           $("#logo").height(106.8);
-           $("#logo").width(355.2);
-           if($("#Contacto").attr("algo"))
-              	{
-              		$Menor.empty();
-              	}
-           $('#accordion').after($Mayor);*/
-           if($("#bContacto").hasClass("active"))
-              {
-              	var active = $( "#accordion" ).accordion( "option", "active" );
-           	$( "#accordion" ).accordion( "option", "active", 3 );
-              }
+	           $("#imagen").height(362);
+	           $("#imagen").width(645);
+	           /*$("#gmap").height(362);
+	           $("#gmap").width(645);
+	           $("#logo").height(106.8);
+	           $("#logo").width(355.2);
+	           if($("#Contacto").attr("algo"))
+	              	{
+	              		$Menor.empty();
+	              	}
+	           $('#accordion').after($Mayor);*/
+	           if($("#bContacto").hasClass("active"))
+	              {
+	              	var active = $( "#accordion" ).accordion( "option", "active" );
+	           	$( "#accordion" ).accordion( "option", "active", 3 );
+	              }
        }
 });
 });
