@@ -85,23 +85,23 @@ $(document).ready(function(){
               	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
-       } else {
+       } /*else {
            $("#imagen").height(362);
            $("#imagen").width(645);
            //$("#gmap").height(362);
            //$("#gmap").width(645);
            $("#logo").height(106.8);
            $("#logo").width(355.2);
-           /*if($("#Contacto").attr("algo"))
+           if($("#Contacto").attr("algo"))
               	{
               		$Menor.empty();
               	}
-           $('#accordion').after($Mayor);*/
+           $('#accordion').after($Mayor);
            if($("#bContacto").hasClass("active"))
               {
               	var active = $( "#accordion" ).accordion( "option", "active" );
            	$( "#accordion" ).accordion( "option", "active", 3 );
-              }
+              }*/
        }
 
 });
