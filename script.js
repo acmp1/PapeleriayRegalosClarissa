@@ -88,8 +88,8 @@ $(document).ready(function(){
        } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
-           $("#gmap").height(362);
-           $("#gmap").width(645);
+           //$("#gmap").height(362);
+           //$("#gmap").width(645);
            $("#logo").height(106.8);
            $("#logo").width(355.2);
            /*if($("#Contacto").attr("algo"))
@@ -97,8 +97,8 @@ $(document).ready(function(){
               		$Menor.empty();
               	}
            $('#accordion').after($Mayor);
-           $( "#accordion" ).accordion( "option", "active", 3 );
-       }    */ 
+           $( "#accordion" ).accordion( "option", "active", 3 );*/
+       }
 
 });
 });
