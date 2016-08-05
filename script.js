@@ -97,13 +97,13 @@ $(document).ready(function(){
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
        } else {
-	           /*$("#imagen").height(362);
+	           $("#imagen").height(362);
 	           $("#imagen").width(645);
-	           $("#gmap").height(0);
-	           $("#gmap").width(0);
-	           /*$("#logo").height(106.8);
+	           /*$("#gmap").height(0);
+	           $("#gmap").width(0);*/
+	           $("#logo").height(106.8);
 	           $("#logo").width(355.2);
-	           if($("#Contacto").attr("algo"))
+	           /*if($("#Contacto").attr("algo"))
 	              	{
 	              		$Menor.empty();
 	              	}
