@@ -96,8 +96,12 @@ $(document).ready(function(){
               	{
               		$Menor.empty();
               	}
-           $('#accordion').after($Mayor);
-           $( "#accordion" ).accordion( "option", "active", 3 );*/
+           $('#accordion').after($Mayor);*/
+           if($("#bContacto").hasClass("active"))
+              {
+              	var active = $( "#accordion" ).accordion( "option", "active" );
+           	$( "#accordion" ).accordion( "option", "active", 3 );
+              }
        }
 
 });
