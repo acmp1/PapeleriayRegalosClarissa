@@ -1,3 +1,4 @@
+//http://webomnizz.com/how-to-make-responsive-google-map-with-google-map-api//
 var c=0;
 var map;
 function cambiaImg(){
