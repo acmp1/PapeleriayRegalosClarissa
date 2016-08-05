@@ -57,6 +57,7 @@ $(document).ready(function(){
               $("#imagen").width(241.875);
               $("#gmap").height(135.75);
               $("#gmap").width(241.875);
+              google.maps.event.trigger(map, 'resize');
               $("#logo").height(53.4);
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
@@ -75,6 +76,7 @@ $(document).ready(function(){
               $("#imagen").width(451.5);
               $("#gmap").height(253.4);
               $("#gmap").width(451.5);
+              google.maps.event.trigger(map, 'resize');
               if($("#bContacto").hasClass("active"))
               {
               	/*if($("#Contacto").hasClass("estilo"))
@@ -85,24 +87,25 @@ $(document).ready(function(){
               	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
-       } /*else {
+       } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
-           //$("#gmap").height(362);
-           //$("#gmap").width(645);
+           $("#gmap").height(362);
+           $("#gmap").width(645);
+           google.maps.event.trigger(map, 'resize');
            $("#logo").height(106.8);
            $("#logo").width(355.2);
-           if($("#Contacto").attr("algo"))
+           /*if($("#Contacto").attr("algo"))
               	{
               		$Menor.empty();
               	}
-           $('#accordion').after($Mayor);
+           $('#accordion').after($Mayor);*/
            if($("#bContacto").hasClass("active"))
               {
               	var active = $( "#accordion" ).accordion( "option", "active" );
            	$( "#accordion" ).accordion( "option", "active", 3 );
               }
-       }*/
-
+       }
 });
+	google.maps.event.trigger(map, 'resize');
 });
