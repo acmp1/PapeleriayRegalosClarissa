@@ -20,7 +20,7 @@ var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="cen
     zoom: 15,
     center: myLatLng
   });*/
-function initialize() {
+function initMap() {
   var mapOptions = {
    center: new google.maps.LatLng(21.876599,-102.308505),
    zoom: 15,
@@ -35,8 +35,8 @@ function initialize() {
     title: 'Papelería y Regalos Clarissa'
   });          
 }
-google.maps.event.addDomListener(window, 'resize', initialize);
-google.maps.event.addDomListener(window, 'load', initialize)
+google.maps.event.addDomListener(window, 'resize', initMap);
+google.maps.event.addDomListener(window, 'load', initMap)
   
 var imgArr = new Array();
 imgArr[0]=new Image();
@@ -51,8 +51,6 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    google.maps.event.addDomListener(window, 'resize', initialize);
-    google.maps.event.addDomListener(window, 'load', initialize)
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
