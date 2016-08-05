@@ -52,7 +52,7 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    if(("#bContacto").hasClass("active"))
+    if($("#bContacto").hasClass("active"))
     {
     	var mapOptions = {
    	center: new google.maps.LatLng(21.876599,-102.308505),
