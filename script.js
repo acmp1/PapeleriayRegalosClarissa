@@ -59,7 +59,6 @@ $(document).ready(function(){
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
-        displayMap();
     });
     $("#bInicio").click(function(){
         $(window).scrollTop($('#Inicio').offset().top);
@@ -117,6 +116,7 @@ $(document).ready(function(){
 	              {
 	              	var active = $( "#accordion" ).accordion( "option", "active" );
 	           	$( "#accordion" ).accordion( "option", "active", 3 );
+	           	displayMap();
 	              }
        }
 });
