@@ -8,7 +8,8 @@
 #gmap{
 	position:relative;
 	height:362px;
-	width:645px;
+	width:100%;
+	background-color: grey;
 }
 .estilo{
     width:100%;
