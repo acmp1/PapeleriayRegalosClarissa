@@ -51,7 +51,7 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    google.maps.event.addDomListener(window, 'load', initMap);
+    google.maps.event.trigger(map, 'load'); 
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
