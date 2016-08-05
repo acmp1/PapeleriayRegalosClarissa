@@ -5,6 +5,10 @@
     margin-top:2.75%;
     clear:both;
 }
+#gmap{
+	height:362;
+	width:645;
+}
 .estilo{
     width:100%;
     height:35px;
