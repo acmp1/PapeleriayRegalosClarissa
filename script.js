@@ -98,7 +98,7 @@ $(document).ready(function(){
               }
        } else {
 	           /*$("#imagen").height(362);
-	           $("#imagen").width(645);*/
+	           $("#imagen").width(645);
 	           $("#gmap").height(0);
 	           $("#gmap").width(0);
 	           /*$("#logo").height(106.8);
@@ -106,8 +106,8 @@ $(document).ready(function(){
 	           if($("#Contacto").attr("algo"))
 	              	{
 	              		$Menor.empty();
-	              	}*/
-	           $('#accordion').after("<div id="gmap"></div>");
+	              	}
+	           $('#accordion').after("<div id="gmap"></div>");*/
 	           if($("#bContacto").hasClass("active"))
 	              {
 	              	var active = $( "#accordion" ).accordion( "option", "active" );
