@@ -5,7 +5,8 @@
     margin-top:2.75%;
     clear:both;
 }
-#gmap{
+.gm-style{
+	position:relative;
 	height:362px;
 	width:645px;
 }
