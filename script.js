@@ -1,4 +1,5 @@
 var c=0;
+var map;
 function cambiaImg(){
     $("#imagen").attr("src",imgArr[c]);
     if (!document.images)
@@ -17,7 +18,7 @@ var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="cen
 function initMap() {
   var myLatLng = {lat: 21.876599, lng: -102.308505};
 
-  var map = new google.maps.Map(document.getElementById('gmap'), {
+  map = new google.maps.Map(document.getElementById('gmap'), {
     zoom: 15,
     center: myLatLng
   });
