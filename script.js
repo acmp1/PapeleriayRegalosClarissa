@@ -52,14 +52,6 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    if(("#bContacto").hasClass("active"))
-    {
-    	$('#gmap').on('shown', function () {
-  		google.maps.event.trigger(map, 'resize');
-  		map.setCenter(new google.maps.LatLng(21.876599, -102.308505));
-	})
-    }
-    
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
@@ -107,9 +99,9 @@ $(document).ready(function(){
        } else {
 	           $("#imagen").height(362);
 	           $("#imagen").width(645);
-	           /*$("#gmap").height(362);
+	           $("#gmap").height(362);
 	           $("#gmap").width(645);
-	           $("#logo").height(106.8);
+	           /*$("#logo").height(106.8);
 	           $("#logo").width(355.2);
 	           if($("#Contacto").attr("algo"))
 	              	{
