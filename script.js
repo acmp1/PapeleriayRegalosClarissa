@@ -63,7 +63,7 @@ $(document).ready(function(){
               {
               	if($("#Contacto").hasClass("estilo"))
               	{
-              		$Mayor.remove();
+              		$Mayor.empty();
               	}
 		$('#ultimoDiv').append($Menor);
 		var active = $( "#accordion" ).accordion( "option", "active" );
@@ -79,7 +79,7 @@ $(document).ready(function(){
               {
               	if($("#Contacto").hasClass("estilo"))
               	{
-              		$Mayor.remove();
+              		$Mayor.empty();
               	}
               	$('#ultimoDiv').append($Menor);
               	var active = $( "#accordion" ).accordion( "option", "active" );
@@ -94,7 +94,7 @@ $(document).ready(function(){
            $("#logo").width(355.2);
            if($("#Contacto").hasClass("algo"))
               	{
-              		$Menor.remove();
+              		$Menor.empty();
               	}
            $('#accordion').append($Mayor);
        }     
