@@ -12,8 +12,8 @@ function cambiaImg(){
 	    }
     setTimeout("cambiaImg()", 3000);
 }
-var $Menor=$('<h3 id="Contacto" id="algo">Contacto</h3><div align="center"><p align="center">Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p><div id="gmap"></div></div>');
-var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="center"><div id="gmap"></div></div><p align="center"> Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p></div>');
+/*var $Menor=$('<h3 id="Contacto" id="algo">Contacto</h3><div align="center"><p align="center">Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p><div id="gmap"></div></div>');
+var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="center"><div id="gmap"></div></div><p align="center"> Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p></div>');*/
 function initMap() {
   var myLatLng = {lat: 21.876599, lng: -102.308505};
 
@@ -61,11 +61,11 @@ $(document).ready(function(){
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
               {
-              	if($("#Contacto").hasClass("estilo"))
+              	/*if($("#Contacto").hasClass("estilo"))
               	{
               		$Mayor.empty();
               	}
-		$('#ultimoDiv').after($Menor);
+		$('#ultimoDiv').after($Menor);*/
 		var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
@@ -77,11 +77,11 @@ $(document).ready(function(){
               $("#gmap").width(451.5);
               if($("#bContacto").hasClass("active"))
               {
-              	if($("#Contacto").hasClass("estilo"))
+              	/*if($("#Contacto").hasClass("estilo"))
               	{
               		$Mayor.empty();
               	}
-              	$('#ultimoDiv').after($Menor);
+              	$('#ultimoDiv').after($Menor);*/
               	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
@@ -92,11 +92,11 @@ $(document).ready(function(){
            $("#gmap").width(645);
            $("#logo").height(106.8);
            $("#logo").width(355.2);
-           if($("#Contacto").attr("algo"))
+           /*if($("#Contacto").attr("algo"))
               	{
               		$Menor.empty();
               	}
-           $('#accordion').after($Mayor);
+           $('#accordion').after($Mayor);*/
        }     
 
 });
