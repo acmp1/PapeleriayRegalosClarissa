@@ -48,6 +48,10 @@
     vertical-align: middle;
     line-height: 35px;    
 }
+.agm_google_maps,
+.agm_google_maps > div {
+       width: 100%;
+}
 .active{
 	color:#fff;
 	background: #cc0033; /* For browsers that do not support gradients */
