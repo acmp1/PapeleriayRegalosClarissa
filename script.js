@@ -52,8 +52,9 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    google.maps.event.addDomListener(window, 'resize', initMap);
-    google.maps.event.addDomListener(window, 'load', initMap)
+    $(window).on('shown.bs.collapse', function () {
+    	$(this).trigger('resize');
+	});
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
