@@ -52,7 +52,7 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    if("#bContacto").hasClass("active")
+    if(("#bContacto").hasClass("active"))
     {
     	$('#gmap').on('shown', function () {
   		google.maps.event.trigger(map, 'resize');
