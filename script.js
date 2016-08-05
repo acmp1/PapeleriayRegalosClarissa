@@ -57,6 +57,7 @@ $(document).ready(function(){
               $("#imagen").width(241.875);
               $("#gmap").height(135.75);
               $("#gmap").width(241.875);
+              map.checkResize();
               $("#logo").height(53.4);
               $("#logo").width(177.6);
               if($("#bContacto").hasClass("active"))
@@ -75,6 +76,7 @@ $(document).ready(function(){
               $("#imagen").width(451.5);
               $("#gmap").height(253.4);
               $("#gmap").width(451.5);
+              	map.checkResize();
               if($("#bContacto").hasClass("active"))
               {
               	/*if($("#Contacto").hasClass("estilo"))
@@ -90,6 +92,7 @@ $(document).ready(function(){
            $("#imagen").width(645);
            $("#gmap").height(362);
            $("#gmap").width(645);
+           map.checkResize();
            $("#logo").height(106.8);
            $("#logo").width(355.2);
            /*if($("#Contacto").attr("algo"))
