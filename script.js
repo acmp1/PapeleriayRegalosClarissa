@@ -52,9 +52,6 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    $(window).on('shown.bs.collapse', function () {
-    	$(this).trigger('resize');
-	});
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
