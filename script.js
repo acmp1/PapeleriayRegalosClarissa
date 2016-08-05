@@ -1,6 +1,4 @@
-//http://webomnizz.com/how-to-make-responsive-google-map-with-google-map-api//
 var c=0;
-var map;
 function cambiaImg(){
     $("#imagen").attr("src",imgArr[c]);
     if (!document.images)
@@ -16,35 +14,30 @@ function cambiaImg(){
 }
 /*var $Menor=$('<h3 id="Contacto" id="algo">Contacto</h3><div align="center"><p align="center">Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p><div id="gmap"></div></div>');
 var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="center"><div id="gmap"></div></div><p align="center"> Dr. Pedro de Alba #122 Fracc. Modelo CP.20080 Aguascalientes, Ags, México.</p></div>');*/
-/*function initMap() {*/
+/*function initMap() {
   var myLatLng = {lat: 21.876599, lng: -102.308505};
-
-  /*map = new google.maps.Map(document.getElementById('gmap'), {
+  map = new google.maps.Map(document.getElementById('gmap'), {
     zoom: 15,
     center: myLatLng
   });*/
-  /*var map; //<-- This is now available to both event listeners and the initialize() function*/
 function initialize() {
   var mapOptions = {
-   center: new google.maps.LatLng(40.5472,12.282715),
+   center: new google.maps.LatLng(21.876599,-102.308505),
    zoom: 15,
    mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  map = new google.maps.Map(document.getElementById("gmap"),
+  var map = new google.maps.Map(document.getElementById("gmap"),
             mapOptions);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-google.maps.event.addDomListener(window, "resize", function() {
- var center = map.getCenter();
- google.maps.event.trigger(map, "resize");
- map.setCenter(center); 
-});
-
   var marker = new google.maps.Marker({
-    position: myLatLng,
+    position: new google.maps.LatLng(21.876599,-102.308505),
     map: map,
+    draggable:false,
     title: 'Papelería y Regalos Clarissa'
-  });
+  });          
+}
+google.maps.event.addDomListener(window, 'resize', initialize);
+google.maps.event.addDomListener(window, 'load', initialize)
+  
 var imgArr = new Array();
 imgArr[0]=new Image();
 imgArr[0].src="Images/Slide/Image1.png";
@@ -67,62 +60,58 @@ $(document).ready(function(){
         $('#bInicio').addClass('active');
         $('#bContacto').removeClass('active');
     });
-    /*$(window).resize(function(){
+    $(window).resize(function(){
        if ($(window).width() <= 580) {  
 
               $("#imagen").height(135.75);
               $("#imagen").width(241.875);
-              $("#gmap").height(135.75);
-              $("#gmap").width(241.875);
-              google.maps.event.trigger(map, 'resize');
+              /*$("#gmap").height(135.75);
+              $("#gmap").width(241.875);*/
               $("#logo").height(53.4);
               $("#logo").width(177.6);
-              if($("#bContacto").hasClass("active"))
-              {*/
-              	/*if($("#Contacto").hasClass("estilo"))
+              /*if($("#bContacto").hasClass("active"))
+              {
+              	($("#Contacto").hasClass("estilo"))
               	{
               		$Mayor.empty();
               	}
 		$('#ultimoDiv').after($Menor);*/
-		/*var active = $( "#accordion" ).accordion( "option", "active" );
+		var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
-              }*/
-       /*} else if ($(window).width() <= 942) {  
+              }
+       } else if ($(window).width() <= 942) {  
 
               $("#imagen").height(253.4);
               $("#imagen").width(451.5);
-              $("#gmap").height(253.4);
-              $("#gmap").width(451.5);
-              google.maps.event.trigger(map, 'resize');
+              /*$("#gmap").height(253.4);
+              $("#gmap").width(451.5);*/
               if($("#bContacto").hasClass("active"))
-              {*/
+              {
               	/*if($("#Contacto").hasClass("estilo"))
               	{
               		$Mayor.empty();
               	}
               	$('#ultimoDiv').after($Menor);*/
-              	/*var active = $( "#accordion" ).accordion( "option", "active" );
+              	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
-              }*/
-       /*} else {
+              }
+       } else {
            $("#imagen").height(362);
            $("#imagen").width(645);
-           $("#gmap").height(362);
+           /*$("#gmap").height(362);
            $("#gmap").width(645);
-           google.maps.event.trigger(map, 'resize');
            $("#logo").height(106.8);
-           $("#logo").width(355.2);*/
-           /*if($("#Contacto").attr("algo"))
+           $("#logo").width(355.2);
+           if($("#Contacto").attr("algo"))
               	{
               		$Menor.empty();
               	}
            $('#accordion').after($Mayor);*/
-           /*if($("#bContacto").hasClass("active"))
+           if($("#bContacto").hasClass("active"))
               {
               	var active = $( "#accordion" ).accordion( "option", "active" );
            	$( "#accordion" ).accordion( "option", "active", 3 );
               }
-       }*/
+       }
 });
-	/*google.maps.event.trigger(map, 'resize');*/
-/*});*/
+});
