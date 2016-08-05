@@ -20,6 +20,10 @@ var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="cen
     zoom: 15,
     center: myLatLng
   });*/
+function displayMap() {
+                    document.getElementById('gmap').style.display="block";
+                    initialize();
+                }
 var map;
 function initMap() {
   var mapOptions = {
@@ -55,6 +59,7 @@ $(document).ready(function(){
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
+        displayMap();
     });
     $("#bInicio").click(function(){
         $(window).scrollTop($('#Inicio').offset().top);
