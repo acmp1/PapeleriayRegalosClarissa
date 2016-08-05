@@ -48,10 +48,10 @@ imgArr[2].src="Images/Slide/Image3.png";
 
 $(document).ready(function(){
     cambiaImg();
-    google.maps.event.addDomListener(window, 'load', initMap);
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
+    google.maps.event.addDomListener(window, 'load', initMap);
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
