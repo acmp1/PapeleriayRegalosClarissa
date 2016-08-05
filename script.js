@@ -65,7 +65,7 @@ $(document).ready(function(){
               	{
               		$Mayor.empty();
               	}
-		$('#ultimoDiv').append($Menor);
+		$('#ultimoDiv').after($Menor);
 		var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
@@ -81,7 +81,7 @@ $(document).ready(function(){
               	{
               		$Mayor.empty();
               	}
-              	$('#ultimoDiv').append($Menor);
+              	$('#ultimoDiv').after($Menor);
               	var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
@@ -96,7 +96,7 @@ $(document).ready(function(){
               	{
               		$Menor.empty();
               	}
-           $('#accordion').append($Mayor);
+           $('#accordion').after($Mayor);
        }     
 
 });
