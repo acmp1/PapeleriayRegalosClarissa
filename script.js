@@ -97,6 +97,8 @@ $(document).ready(function(){
               		$Menor.empty();
               	}
            $('#accordion').after($Mayor);*/
+           var active = $( "#accordion" ).accordion( "option", "active" );
+           $( "#accordion" ).accordion( "option", "active", 3 );
        }     
 
 });
