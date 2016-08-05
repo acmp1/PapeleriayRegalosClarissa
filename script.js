@@ -110,8 +110,8 @@ $(document).ready(function(){
 	           $('#accordion').after($Mayor);*/
 	           if($("#bContacto").hasClass("active"))
 	              {
-	              	$("#Contacto").remove();
-	              	$("#accordion").after($Mayor);
+	              	$("#Contacto").empty();
+	              	$("#accordion").after(Mayor);
 	              	var active = $( "#accordion" ).accordion( "option", "active" );
 	           	$( "#accordion" ).accordion( "option", "active", 3 );
 	              }
