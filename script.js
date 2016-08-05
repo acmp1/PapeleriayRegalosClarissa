@@ -52,7 +52,10 @@ $(document).ready(function(){
     $( "#accordion" ).accordion({
       heightStyle: "content"
     });
-    google.maps.event.trigger(map, 'load'); 
+    $('#gmap').on('shown', function () {
+  	google.maps.event.trigger(map, 'resize');
+  	map.setCenter(new google.maps.LatLng(21.876599, -102.308505));
+	})
     $("#bContacto").click(function(){
         $('#bContacto').addClass('active');
         $('#bInicio').removeClass('active');
