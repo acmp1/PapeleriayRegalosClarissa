@@ -101,8 +101,8 @@ $(document).ready(function(){
               {
               	var active = $( "#accordion" ).accordion( "option", "active" );
            	$( "#accordion" ).accordion( "option", "active", 3 );
-              }*/
-       }
+              }
+       }*/
 
 });
 });
