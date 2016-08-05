@@ -20,13 +20,14 @@ var $Mayor=$('<div id="Contacto" class="estilo"><h3>Contacto</h3><div align="cen
     zoom: 15,
     center: myLatLng
   });*/
+var map;
 function initMap() {
   var mapOptions = {
    center: new google.maps.LatLng(21.876599,-102.308505),
    zoom: 15,
    mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  var map = new google.maps.Map(document.getElementById("gmap"),
+  map = new google.maps.Map(document.getElementById("gmap"),
             mapOptions);
   var marker = new google.maps.Marker({
     position: new google.maps.LatLng(21.876599,-102.308505),
