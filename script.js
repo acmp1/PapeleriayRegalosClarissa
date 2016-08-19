@@ -34,6 +34,7 @@ function initMap() {
     map: map,
     draggable:false,
     title: 'Papelería y Regalos Clarissa'
+  $("#gmap").append(map);
   });          
 }
 google.maps.event.addDomListener(window, 'resize', initMap);
