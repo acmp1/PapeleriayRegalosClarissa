@@ -80,7 +80,7 @@ $(document).ready(function(){
 		var active = $( "#accordion" ).accordion( "option", "active" );
 		$( "#accordion" ).accordion( "option", "active", 3 );
               }
-       } else if ($(window).width() <= 942) {  
+       } else if ($(window).width() <= 970) {  
 
               $("#imagen").height(253.4);
               $("#imagen").width(451.5);
