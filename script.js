@@ -41,11 +41,11 @@ function initMap() {
   
 var imgArr = new Array();
 imgArr[0]=new Image();
-imgArr[0].src="Images/Slide/Image1.png";
-imgArr[1]=new Image();
+imgArr[0].src="Images/Slide/impresiones.png";
+/*imgArr[1]=new Image();
 imgArr[1].src="Images/Slide/Image2.png";
 imgArr[2]=new Image();
-imgArr[2].src="Images/Slide/Image3.png";
+imgArr[2].src="Images/Slide/Image3.png";*/
 
 $(document).ready(function(){
     cambiaImg();
